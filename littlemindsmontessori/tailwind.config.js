@@ -4,6 +4,7 @@ module.exports = {
     'index/templates/index/**/*.html',
   ],
   theme: {
+    fontFamily: {},
     extend: {},
   },
   plugins: [],

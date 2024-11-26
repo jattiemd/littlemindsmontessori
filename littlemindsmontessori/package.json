@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./static/src/input.css -o ./static/src/style.css --watch"
+    "dev": "npx tailwindcss -i ./static/src/input.css -o ./static/src/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
