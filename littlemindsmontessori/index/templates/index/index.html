@@ -11,8 +11,7 @@
 </head>
 <body style="font-family: Comic Sans MS;" class=" min-h-screen">
 
-    <!-- Navbar -->
-    <header class="p-3 sticky top-0 z-10">
+    <header class="p-3 sticky top-0 z-10 bg-gradient-to-t from-transparent via-white to-white">
         <section class="max-w-6xl mx-auto flex justify-between items-center py-1">
             <h1 class="text-3xl font-medium">
                 <a href="#home">Logo</a>
@@ -23,27 +22,82 @@
              </div>
              <!-- Desktop Nav -->
               <nav class="hidden sm:block text-xl" aria-label="main">
-                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 active:bg-blue-500">
+                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 transition-transform duration-300 hover:scale-90">
                     <a href="#about" >About</a>
                 </button>
-                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 active:bg-blue-500">
+                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 transition-transform duration-300 hover:scale-90">
                     <a href="#daily_program" >Daily Program</a>
                 </button>
-                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 active:bg-blue-500">
+                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 transition-transform duration-300 hover:scale-90">
                     <a href="#extra_activities" >Extra Activities</a>
                 </button>
-                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 active:bg-blue-500">
+                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 transition-transform duration-300 hover:scale-90">
                     <a href="#fees" >Fees</a>
                 </button>
-                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 active:bg-blue-500">
+                <button class="rounded-full px-2 py-1 hover:text-white hover:bg-blue-500 transition-transform duration-300 hover:scale-90">
                     <a href="#contact" >Contact</a>
                 </button>
               </nav>
         </section>
     </header>
     
-    <!-- landing  -->
-    <div class="container"></div>
+    <main class="max-w-6xl mx-auto">
+        <!-- Landing Image -->
+        <section id="Landing" class="flex justify-center p-6 items-center gap-8 ">
+            <div class="relative">
+                <img class="-z-10 rounded-xl border border-gray-300 shadow-lg " src="{% static 'img/kids_circle.png' %}" alt="bg_img">
+                <div class="absolute inset-0 rounded-xl hover:bg-gradient-to-b hover:from-transparent hover:to-neutral-700/50 transition duration-1000 flex items-center justify-center">
+                    <p class="text-slate-200 sm:text-2xl transition-transform duration-300 hover:scale-125 hover:brightness-200 animate-pulse">Little </p>
+                    <p class="text-slate-200 sm:text-2xl transition-transform duration-300 hover:scale-125 hover:brightness-200 mt-10 animate-pulse"> Minds </p>
+                    <p class="text-slate-200 sm:text-2xl transition-transform duration-300 hover:scale-125 hover:brightness-200 mt-20 animate-pulse"> Montessori</p>
+                </div>
+            </div>
+        </section>
+        <section class="sm:flex-row mb-8">
+            <div class="ml-8 text-2xl text-blue-900">    
+                <p>- Enhancing the <strong class="text-2xl animate-pulse">Minds</strong> of our future leaders.</p>
+            </div>
+            <div class=" mt-5 "></div>
+            <p class="ml-10">Join the Little Minds Montessori family, where individualized learning meets </p>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+
+        <!-- Our Aim -->
+        <section id="our_aim" class="p-6 my-8">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Our Aim</h2>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+
+        <!-- Daily Program -->
+        <section id="our_aim" class="p-6 my-8">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Daily Program</h2>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+
+        <!-- Extra Activities -->
+        <section id="our_aim" class="p-6 my-8">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Extra Activities</h2>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+
+        <!-- Fees -->
+        <section id="our_aim" class="p-6 my-8">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Fees</h2>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+
+        <!-- Contact -->
+        <section id="our_aim" class="p-6 my-8">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Contact</h2>
+        </section>
+        
+
+    </main>
 
     
     
