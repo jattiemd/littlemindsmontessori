@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet" href="{% static 'src/style.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Little Minds Montessori</title>
 
 </head>
 <body style="font-family: Comic Sans MS;" class=" min-h-screen">
 
-    <header class="p-3 sticky top-0 z-10 bg-gradient-to-t from-transparent via-white to-white">
+    <header class="p-3 sticky top-0 z-10 bg-gradient-to-t from-transparent via-white to-black">
         <section class="max-w-6xl mx-auto flex justify-between items-center py-1">
             <h1 class="text-3xl font-medium">
                 <a href="#home">Logo</a>
@@ -43,9 +44,9 @@
     
     <main class="max-w-6xl mx-auto">
         <!-- Landing Image -->
-        <section id="Landing" class="flex justify-center p-6 items-center gap-8 ">
+        <section id="landing" class="justify-center p-6 items-center gap-8">
             <div class="relative">
-                <img class="-z-10 rounded-xl border border-gray-300 shadow-lg " src="{% static 'img/kids_circle.png' %}" alt="bg_img">
+                <img class="rounded-xl border border-gray-300 shadow-2xl " src="{% static 'img/kids_circle.png' %}" alt="kids_circle">
                 <div class="absolute inset-0 rounded-xl hover:bg-gradient-to-b hover:from-transparent hover:to-neutral-700/50 transition duration-1000 flex items-center justify-center">
                     <p class="text-slate-200 sm:text-2xl transition-transform duration-300 hover:scale-125 hover:brightness-200 animate-pulse">Little </p>
                     <p class="text-slate-200 sm:text-2xl transition-transform duration-300 hover:scale-125 hover:brightness-200 mt-10 animate-pulse"> Minds </p>
@@ -53,49 +54,75 @@
                 </div>
             </div>
         </section>
-        <section class="sm:flex-row mb-8">
+        <section class="mb-8">
             <div class="ml-8 text-2xl text-blue-900">    
-                <p>- Enhancing the <strong class="text-2xl animate-pulse">Minds</strong> of our future leaders.</p>
+                <p>- Enhancing the Minds of our future leaders.</p>
             </div>
-            <div class=" mt-5 "></div>
-            <p class="ml-10">Join the Little Minds Montessori family, where individualized learning meets </p>
+            <div class="mt-5 ">
+                <p class="ml-10">Join the Little Minds Montessori family, where individualized learning meets </p>
+            </div>
         </section>
 
         <hr class="mx-auto bg-black dark:bg-white w-3/4">
 
         <!-- Our Aim -->
-        <section id="our_aim" class="p-6 my-8">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Our Aim</h2>
+        <section id="our_aim" class="p-6">
+            <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Our Aim</div>
+            <div class="flex flex-col sm:flex-row gap-2 bg-gray-200 p-3 rounded-md borderb-4 border-gray-400 shadow-lg transition-transform duration-300 hover:scale-105"> 
+                <div class="text-center sm:text-justify place-content-center">
+                    <p class="text-2xl text-center bg-black text-white rounded-full mb-3">
+                        At Little Minds Montessori
+                    </p>
+                    <p>
+                        we strive to instill a love for learning that extends beyond the classroom, fostering
+                        a growth mindset that empowers children to navigate the complexities of tomorrow
+                    </p>
+                    <br>
+                    <p>
+                        Little Minds Montessori nurtures the whole child - intellectually, socially, emotionally, and physically - 
+                        laying the foundation for a lifetime of learning, growth, and success.
+                    </p>
+                </div>
+                <div>
+                    <img class="rounded-xl " src="{% static 'img/kids_focus.png' %}" alt="">
+                </div>
+            </div>
+            <div class="flex-col mt-3">
+                <div>
+                    <p class="text-2xl font-semibold sm:text-center mt-4">Guided by the principles of Maria Montessori</p>
+                    <p class="text-gray-600 hover:text-black sm:text-center">Our learning environment is thoughtfully designed to promote the following:</p>
+                    <ul class="my-5">
+                        <li class="mt-3">
+                            <p class="font-semibold text-lg">Practical Life</p>
+                            <p class="text-gray-600 hover:text-black">Developing independence, self-care, and fine motor skills through everyday activities.</p>
+                        </li>
+                        <li class="mt-4">
+                            <p class="font-semibold text-lg">Sensorial</p>
+                            <p class="text-gray-600 hover:text-black">Exploring and understanding the world through sensory experiences and hands-on discovery.</p>
+                        </li>
+                        <li class="mt-4">
+                            <p class="font-semibold text-lg">Mathematics</p>
+                            <p class="text-gray-600 hover:text-black">Building foundational math concepts through manipulatives and real-world applications.</p>
+                        </li>
+                        <li class="mt-4">
+                            <p class="font-semibold text-lg">Language</p>
+                            <p class="text-gray-600 hover:text-black">Culitvating reading, writing, and communcation skills through phonetics, literature, and creative expression.</p>
+                        </li>
+                        <li class="mt-4">
+                            <p class="font-semibold text-lg">Crafts & Creative Expression</p>
+                            <p class="text-gray-600 hover:text-black">Encouraging imagination, creativity, and self-expresion through art, music, and movement.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
         </section>
 
         <hr class="mx-auto bg-black dark:bg-white w-3/4">
 
-        <!-- Daily Program -->
-        <section id="our_aim" class="p-6 my-8">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Daily Program</h2>
-        </section>
-
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
-
-        <!-- Extra Activities -->
-        <section id="our_aim" class="p-6 my-8">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Extra Activities</h2>
-        </section>
-
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
-
-        <!-- Fees -->
-        <section id="our_aim" class="p-6 my-8">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Fees</h2>
-        </section>
-
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
-
-        <!-- Contact -->
-        <section id="our_aim" class="p-6 my-8">
-            <h2 class="text-4xl font-bold text-center sm:text-5xl text-blue-900 dark:tex-white">Contact</h2>
-        </section>
         
+        <section id="" class="p-6">
+            <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Daily Program</div>
+        </section>
 
     </main>
 
