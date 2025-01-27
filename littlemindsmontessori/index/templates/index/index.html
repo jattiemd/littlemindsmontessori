@@ -64,7 +64,7 @@
             </div>
         </section>
 
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+        <hr class="mx-auto bg-yellow-400 w-3/4">
 
         <!-- Our Aim -->
         <section id="our_aim" class="p-6">
@@ -91,37 +91,37 @@
             <div class="flex-col mt-3">
                 <div>
                     <p class="text-2xl font-semibold sm:text-center mt-4">Guided by the principles of Maria Montessori</p>
-                    <p class="text-gray-600 hover:text-black sm:text-center">Our learning environment is thoughtfully designed to promote the following:</p>
+                    <p class="text-black sm:text-gray-600 sm:hover:text-black sm:text-center">Our learning environment is thoughtfully designed to promote the following:</p>
                     <ul class="my-5">
                         <li class="mt-3">
-                            <p class="font-semibold text-lg">Practical Life</p>
-                            <p class="text-gray-600 hover:text-black">Developing independence, self-care, and fine motor skills through everyday activities.</p>
+                            <span class="font-semibold text-lg rounded-3xl p-1 bg-yellow-300">Practical Life</span>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Developing independence, self-care, and fine motor skills through everyday activities.</p>
                         </li>
                         <li class="mt-4">
-                            <p class="font-semibold text-lg">Sensorial</p>
-                            <p class="text-gray-600 hover:text-black">Exploring and understanding the world through sensory experiences and hands-on discovery.</p>
+                            <span class="font-semibold text-lg rounded-3xl p-1 bg-yellow-300">Sensorial</span>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Exploring and understanding the world through sensory experiences and hands-on discovery.</p>
                         </li>
                         <li class="mt-4">
-                            <p class="font-semibold text-lg">Mathematics</p>
-                            <p class="text-gray-600 hover:text-black">Building foundational math concepts through manipulatives and real-world applications.</p>
+                            <span class="font-semibold text-lg rounded-3xl p-1 bg-yellow-300">Mathematics</span>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Building foundational math concepts through manipulatives and real-world applications.</p>
                         </li>
                         <li class="mt-4">
-                            <p class="font-semibold text-lg">Language</p>
-                            <p class="text-gray-600 hover:text-black">Culitvating reading, writing, and communcation skills through phonetics, literature, and creative expression.</p>
+                            <span class="font-semibold text-lg rounded-3xl p-1 bg-yellow-300">Language</span>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Culitvating reading, writing, and communcation skills through phonetics, literature, and creative expression.</p>
                         </li>
                         <li class="mt-4">
-                            <p class="font-semibold text-lg">Crafts & Creative Expression</p>
-                            <p class="text-gray-600 hover:text-black">Encouraging imagination, creativity, and self-expresion through art, music, and movement.</p>
+                            <span class="font-semibold text-lg rounded-3xl p-1 bg-yellow-300">Crafts & Creative Expression</span>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Encouraging imagination, creativity, and self-expresion through art, music, and movement.</p>
                         </li>
                     </ul>
                 </div>
             </div>            
         </section>
 
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+        <hr class="mx-auto bg-yellow-400 w-3/4">
 
         <!-- Daily Program -->
-        <section id="daily_program" class="p-6">
+        <section id="daily_program" class="p-6 mb-6">
             <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Daily Program</div>
             <div class="text-center">
                 <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
@@ -163,29 +163,47 @@
             </div>
         </section>
 
-        <hr class="mx-auto bg-black dark:bg-white w-3/4">
+        <hr class="mx-auto bg-yellow-400 w-3/4">
 
         <!-- Extra Activities -->
-        <section id="extra_activities" class="p-6 justify-items-center">
+        <section id="extra_activities" class="p-6 mb-6 justify-items-center">
             <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Extra Activities</div>
             <div class="columns-1 sm:columns-2 mb-10 justify-items-center ">
-                <img class="object-contain w-3/4 h-3/4" src="{% static 'img/mosque-islam-svgrepo-com.png' %}" alt="masjid">
-                <p class="text-xl font-bold text-center mt-8">Islamic Studies</p>
-                <img class="object-contain w-3/4 h-3/4 mt-10" src="{% static 'img/paint-palette-art-svgrepo-com.png' %}" alt="arts">
-                <p class="text-xl font-bold text-center mt-8">Arts & Crafts</p>
+                <img class="rounded-full shadow-2xl border-2 border-yellow-400" src="{% static 'img/islamic_studies.png' %}" alt="masjid">
+                <p class="text-xl font-bold text-center mt-4 rounded-3xl p-1 px-4 border-2 border-yellow-400 bg-yellow-300">Islamic Studies</p>
+                <img class="rounded-full shadow-2xl border-2 border-yellow-400 mt-8 sm:mt-0" src="{% static 'img/kids_art.png' %}" alt="arts">
+                <p class="text-xl font-bold text-center mt-4 rounded-3xl p-1 px-4 border-2 border-yellow-400 bg-yellow-300">Arts & Crafts</p>
             </div>
             <div class="columns-1 sm:columns-2 mb-10 justify-items-center ">
-                <img class="object-contain w-3/4 h-3/4" src="{% static 'img/chef-svgrepo-com.png' %}" alt="cooking">
-                <p class="text-xl font-bold text-center mt-8">Cooking & Baking </p>
-                <img class="object-contain w-3/4 h-3/4" src="{% static 'img/sports-svgrepo-com.png' %}" alt="sports">
-                <p class="text-xl font-bold text-center mt-8">Sport Skills</p>
+                <img class="rounded-full shadow-2xl border-2 border-yellow-400" src="{% static 'img/kids_cooking.png' %}" alt="cooking">
+                <p class="text-xl font-bold text-center mt-4 rounded-3xl p-1 px-4 border-2 border-yellow-400 bg-yellow-300">Cooking & Baking </p>
+                <img class="rounded-full shadow-2xl border-2 border-yellow-400 mt-8 sm:mt-0" src="{% static 'img/kids_sport.png' %}" alt="sports">
+                <p class="text-xl font-bold text-center mt-4 rounded-3xl p-1 px-4 border-2 border-yellow-400 bg-yellow-300">Sport Skills</p>
             </div>
             <div class="columns-1 justify-items-center  sm:h-1/2 sm:w-1/2">
-                <img class="object-contain w-3/4 h-3/4" src="{% static 'img/science-svgrepo-com.png' %}" alt="science">
-                <p class="text-xl font-bold text-center mt-8">Science </p>
+                <img class="rounded-full shadow-2xl border-2 border-yellow-400" src="{% static 'img/kids_science.png' %}" alt="science">
+                <p class="text-xl font-bold text-center mt-6 rounded-3xl p-1 px-4 border-2 border-yellow-400 bg-yellow-300">Science </p>
             </div>
-            
         </section>
+
+        <hr class="mx-auto bg-yellow-600 w-3/4">
+
+        <!-- School Fees -->
+         <section id="school_fees" class="p-6 mb-6 justify-items-center">
+            <div class="text-blue-900 text-4xl text-center mt-3 mb-5">School Fees (2025)</div>
+            <div class="mt-4 sm:text-center bg-gray-100 w-fit py-3 px-16 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="text-xl font-bold ">Morning Program: R2,000</div>
+                <div class="text-xl font-bold ">Aftercare 1pm-3pm: R300</div>
+                <div class="text-xl font-bold ">Aftercare 3pm-5pm: R500</div>
+            </div>
+         </section>
+
+        <hr class="mx-auto bg-yellow-600 w-3/4">
+
+        <!-- Contact -->
+         <section id="contact" class="p-6">
+            <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Contact</div>
+         </section>
         
     </main>
     
