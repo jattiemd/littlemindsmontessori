@@ -12,6 +12,25 @@
 </head>
 <body style="font-family: Comic Sans MS;" class="min-h-screen bg-sky-100">
 
+    <style>
+        @keyframes appear {
+            from {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0px);
+            }
+          }
+          
+          .custom-block {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+          }
+    </style>
+
     <header class="p-3 sticky top-0 z-10 bg-gradient-to-t from-transparent via-sky-100 to-gray-100">
         <section class="max-w-6xl mx-auto flex justify-between items-center py-1">
             <h1 class="text-3xl font-medium">
@@ -87,23 +106,33 @@
                     <ul class="my-5">
                         <li class="mt-3">
                             <span class="font-semibold text-lg rounded-3xl py-1 px-2 border-2 border-yellow-400 bg-yellow-300">Practical Life</span>
-                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Developing independence, self-care, and fine motor skills through everyday activities.</p>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-2">
+                                We emphasize the importance of Practical Life as a foundational element of early childhood education. Through carefully designed activities, children develop essential skills such as coordination, independence, and responsibility. By engaging in tasks like pouring, cleaning, and food preparation, students gain a sense of accomplishment while also refining their fine motor skills. These real-world experiences empower children to connect with their environment, fostering self-confidence and a strong sense of community. Our Practical Life curriculum not only supports the child’s cognitive growth but also nurtures the development of life skills that will benefit them throughout their lives.
+                            </p>
                         </li>
                         <li class="mt-4">
                             <span class="font-semibold text-lg rounded-3xl py-1 px-2 border-2 border-yellow-400 bg-yellow-300">Sensorial</span>
-                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Exploring and understanding the world through sensory experiences and hands-on discovery.</p>
+                            <p class="text-black sm:text-gray-800 sm:hover:text-black mt-2">
+                                We place a strong emphasis on Sensorial learning, where children engage with the world through their senses to explore and understand their environment. Our carefully crafted materials help children refine their senses of sight, touch, taste, smell, and hearing, enabling them to categorize, compare, and make sense of the world around them. These hands-on activities encourage sensory exploration, fostering concentration, attention to detail, and critical thinking skills. By connecting with the world in a meaningful way, children not only enhance their cognitive development but also build a deeper understanding and appreciation for the richness of their surroundings.
+                            </p>
                         </li>
                         <li class="mt-4">
                             <span class="font-semibold text-lg rounded-3xl py-1 px-2 border-2 border-yellow-400 bg-yellow-300">Mathematics</span>
-                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Building foundational math concepts through manipulatives and real-world applications.</p>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-2">
+                                Mathematics is introduced through hands-on, concrete experiences that build a strong foundation for abstract thinking. Using specially designed materials, children explore concepts like number recognition, addition, subtraction, and multiplication in a tangible way, making complex ideas both accessible and enjoyable. By moving from the physical manipulation of objects to more abstract concepts, students gain a deep, intuitive understanding of mathematical principles. This approach fosters problem-solving skills, logical thinking, and a love for learning, ensuring that children develop both confidence and competence in mathematics as they grow.
+                            </p>
                         </li>
                         <li class="mt-4">
                             <span class="font-semibold text-lg rounded-3xl py-1 px-2 border-2 border-yellow-400 bg-yellow-300">Language</span>
-                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Culitvating reading, writing, and communcation skills through phonetics, literature, and creative expression.</p>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-2">
+                                Language development is nurtured through a rich and immersive environment where children are encouraged to explore reading, writing, speaking, and listening at their own pace. With the help of carefully designed materials, children first engage with phonetic sounds, letter recognition, and vocabulary, gradually progressing to more complex language skills such as sentence construction and storytelling. The Montessori approach fosters a deep love for language by making learning meaningful and interactive, while also promoting confidence and communication skills that will serve children throughout their lives. Our focus on language not only enhances literacy but also strengthens cognitive abilities, creativity, and a lifelong passion for learning.
+                            </p>
                         </li>
                         <li class="mt-4">
                             <span class="font-semibold text-lg rounded-3xl py-1 px-2 border-2 border-yellow-400 bg-yellow-300">Crafts & Creative Expression</span>
-                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-1">Encouraging imagination, creativity, and self-expresion through art, music, and movement.</p>
+                            <p class="text-black sm:text-gray-600 sm:hover:text-black mt-2">
+                                We believe that crafts and creative expression are essential for the holistic development of each child. Through a variety of hands-on art activities, children are encouraged to explore their imagination, develop fine motor skills, and express their unique perspectives. Whether through painting, drawing, sculpting, or building, students are provided with opportunities to experiment with different materials and techniques, fostering creativity, problem-solving, and self-expression. This focus on artistic exploration not only enriches their emotional development but also allows children to communicate and connect with the world around them in new and meaningful ways.
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -115,42 +144,42 @@
         <!-- Daily Program -->
         <section id="daily_program" class="p-6 mb-6">
             <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Daily Program</div>
-            <div class="text-center">
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+            <div class="text-center view">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Breakfast: 7:20am</p>
                     <p>Cereal will be provided by the school. However, you are welcome to pack a breakfast meal for your child.</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Uninterrupted Work Cycle: 8:15am</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Snack: 10:00am</p>
                     <p>Please pack a small snack box + water/juice</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Cycle Time: 11:15am</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Outside Time: 11:30am</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Fruit: 12:30am</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Nap Time: 1:00pm</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Lunch Time: 2:00pm</p>
-                    <p>"Please pack a small lunch for aftercare snack"</p>
+                    <p>Please pack a small lunch for aftercare snack</p>
                 </div>
-                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-105">
+                <div class="mt-4 sm:text-center bg-gray-100 p-3 rounded-full shadow-lg custom-block">
                     <p class="text-xl font-bold">Fruit Platter: 4:00pm</p>
-                    <p>"Ask Tahira for 1 sentence minimum to go here"</p>
+                    <p>"Enter Sentence"</p>
                 </div>
             </div>
         </section>
@@ -186,7 +215,7 @@
             <div class="flex sm:flex-row flex-col gap-2 justify-center">
                 <div class="bg-gray-100 rounded-xl shadow-2xl px-2 pt-12 border-x-2 border-x-yellow-300">
                     <div class="text-4xl font-semi-bold text-left pt-2 pb-2">Morning Program</div>
-                    <p>Ask Tahira for Details about Morning Program"</p>
+                    <p>"Enter sentence about morning program"</p>
                     <div class="py-8 text-center">
                         <span class="text-6xl font-semi-bold">R2,000</span><span class="text-gray-800">/mo</span>
                         <div class="pt-8">
@@ -196,7 +225,7 @@
                 </div>
                 <div class="bg-gray-100 rounded-xl shadow-2xl px-2 pt-12 border-x-2 border-x-yellow-300">
                     <div class="text-4xl font-semi-bold text-left pt-2 pb-2">Aftercare</div>
-                    <p>"Ask Tahira for Details about aftercare"</p>
+                    <p>"Enter sentence about morning program"</p>
                     <div class="py-8 text-center">
                         <span class="text-6xl font-semi-bold">R300</span><span class="text-gray-800">/day</span>
                         <div class="pt-8">
@@ -206,7 +235,7 @@
                 </div>
                 <div class="bg-gray-100 rounded-xl shadow-2xl px-2 pt-12 border-x-2 border-x-yellow-300">
                     <div class="text-4xl font-semi-bold text-left pt-2 pb-2">Extended Aftercare</div>
-                    <p>Ask Tahira for Details about extended aftercare"</p>
+                    <p>"Enter sentence about morning program"</p>
                     <div class="py-8 text-center">
                         <span class="text-6xl font-semi-bold">R500</span><span class="text-gray-800">/day</span>
                         <div class="pt-8">
@@ -219,11 +248,11 @@
 
         <hr class="mx-auto bg-yellow-600 w-3/4">
 
-        <!-- Contact -->
         
     </main>
     
 </body>
+<!-- Contact -->
 <footer class="bg-gradient-to-b bg-gray-100">
      <section id="contact" class="p-6">
         <div class="text-blue-900 text-4xl text-center mt-3 mb-5">Contact Us</div>
